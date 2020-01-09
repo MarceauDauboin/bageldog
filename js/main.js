@@ -6,7 +6,7 @@
 (function($) {
 
     "use strict";
-    
+
     const cfg = {
                 scrollDuration : 800, // smoothscroll duration
                 mailChimpURL   : ''   // mailchimp url
@@ -32,13 +32,13 @@
             // force page scroll position to top at page refresh
             $('html, body').animate({ scrollTop: 0 }, 'normal');
 
-            // will first fade out the loading animation 
+            // will first fade out the loading animation
             $("#loader").fadeOut("slow", function() {
                 // will fade out the whole DIV that covers the website.
                 $("#preloader").delay(300).fadeOut("slow");
-            }); 
-            
-            // for hero content animations 
+            });
+
+            // for hero content animations
             $("html").removeClass('ss-preload');
             $("html").addClass('ss-loaded');
 
@@ -96,7 +96,7 @@
 
 
    /* mobile menu
-    * ---------------------------------------------------- */ 
+    * ---------------------------------------------------- */
     const ssMobileMenu = function() {
 
         const $toggleButton = $('.header-menu-toggle');
@@ -151,7 +151,7 @@
                 $allItems.removeClass('is-active');
                 $curItem.addClass('is-active');
             }
-            
+
             return false;
         });
     };
@@ -178,7 +178,7 @@
                 $size = $thumbLink.data('size').split('x'),
                 $width  = $size[0],
                 $height = $size[1];
-        
+
             let item = {
                 src  : $href,
                 w    : $width,
@@ -192,22 +192,7 @@
             items.push(item);
         });
 
-        // bind click event
-        $folioItems.each(function(i) {
 
-            $(this).find('.folio-item__thumb-link').on('click', function(e) {
-                e.preventDefault();
-                let options = {
-                    index: i,
-                    showHideOpacity: true
-                }
-
-                // initialize PhotoSwipe
-                let lightBox = new PhotoSwipe($pswp, PhotoSwipeUI_Default, items, options);
-                lightBox.init();
-            });
-
-        });
     };
 
 
@@ -215,7 +200,7 @@
    /* slick slider
     * ------------------------------------------------------ */
     const ssSlickSlider = function() {
-            
+
         $('.testimonial-slider').slick({
             arrows: false,
             dots: true,
@@ -247,7 +232,7 @@
    /* Animate On Scroll
     * ------------------------------------------------------ */
     const ssAOS = function() {
-        
+
         AOS.init( {
             offset: 100,
             duration: 600,
@@ -267,19 +252,19 @@
 
         $('.alert-box').on('click', '.alert-box__close', function() {
             $(this).parent().fadeOut(500);
-        }); 
+        });
 
     };
 
-    
+
    /* smooth scrolling
     * ------------------------------------------------------ */
     const ssSmoothScroll = function() {
-        
+
         $('.smoothscroll').on('click', function (e) {
             const target = this.hash;
             const $target = $(target);
-            
+
             e.preventDefault();
             e.stopPropagation();
 
@@ -296,7 +281,7 @@
    /* back to top
     * ------------------------------------------------------ */
     const ssBackToTop = function() {
-        
+
         const pxShow = 800;
         const $goTopButton = $(".ss-go-top")
 
