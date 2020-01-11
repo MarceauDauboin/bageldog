@@ -2116,6 +2116,7 @@ input::-moz-focus-inner {
 /* -------------------------------------------------------------------
  * ## hero scroll
  * ------------------------------------------------------------------- */
+
 .hero-scroll {
   position: absolute;
   right: 8rem;
@@ -2391,6 +2392,13 @@ html.no-csstransitions .hero-content {
     height: 5.2rem;
     width: 5.2rem;
   }
+  #aboutpage .hero-scroll{
+    visibility: hidden;
+  }
+
+  #servicespage .hero-scroll{
+    visibility: hidden;
+  }
 
 }
 
@@ -2409,6 +2417,12 @@ html.no-csstransitions .hero-content {
 
   .hero-scroll {
     right: 2.4rem;
+  }
+  #aboutpage .hero-scroll{
+    visibility: hidden;
+  }
+  #servicespage .hero-scroll{
+    visibility: hidden;
   }
 
 }
@@ -2476,7 +2490,7 @@ html.no-csstransitions .hero-content {
 .s-about__section--profile .profile-pic {
   width: 24vw;
   position: absolute;
-  top: 8rem;
+  top: 20rem;
   left: calc(50% + 80px);
 }
 
@@ -2772,6 +2786,7 @@ html.no-csstransitions .hero-content {
 @media screen and (max-width:800px) {
   .s-services {
     padding-top: 20rem;
+
   }
 
   .s-services__content .s-services__leftcol {
