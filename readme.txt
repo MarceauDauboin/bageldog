@@ -121,6 +121,9 @@ Javascript Files:
  - Slick slider (http://kenwheeler.github.io/slick/)
  - Animate On Scroll (https://michalsnik.github.io/aos/)
  - Code Prettify (https://github.com/google/code-prettify)
+ -FIX THIS
+Copyright (c) 2015, Clippings Ltd.
+All rights reserved.
 
 -------------------------------------------------------------------------------------------------------
 
