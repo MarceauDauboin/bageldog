@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/fonts.css">
 
     <!-- script
     ================================================== -->
@@ -29,6 +30,21 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="manifest" href="site.webmanifest">
+    <style>
+      @font-face {
+         font-family: fieldwork-bold;
+         src: url(fonts/Fieldwork16GeoBold.otf);
+      }
+      @font-face {
+         font-family: firasans-light;
+         src: url(fonts/firasans-light.otf);
+      }
+      @font-face {
+         font-family: firasans-semibold;
+         src: url(fonts/firasans-semibold.otf);
+      }
+
+    </style>
 
 </head>
 
@@ -63,7 +79,7 @@
                     <li><a class="smoothscroll" href="#hero" title="Intro">Home</a></li>
                     <li><a href="about.html" title="About">About</a></li>
                     <li><a class="smoothscroll" href="#portfolio" title="Works">Works</a></li>
-                    <li><a class="smoothscroll" href="#footer">BagelBits</a></li>
+                    <li><a href="bagel-bits.html">BagelBits</a></li>
                 </ul>
             </nav> <!-- end header-nav-wrap -->
 
@@ -78,7 +94,7 @@
 
     <!-- hero
     ================================================== -->
-    <section id="hero" class="s-hero target-section" data-parallax="scroll" data-image-src="images/hero-bg-3000.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+    <section id="hero" class="s-hero target-section front-page" data-parallax="scroll" data-image-src="images/hero-bg-3000.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
 
         <div class="row hero-content">
 
@@ -97,7 +113,7 @@
                 -->
                 <ul class="hero-social">
                     <li>
-                        <a href="#0" title="">Twitter</a>
+                        <a href="#0" title="" >Twitter</a>
                     </li>
                     <li>
                         <a href="#0" title="">Behance</a>
@@ -262,69 +278,46 @@
     </section> <!-- end portfolio -->
 
 
-    <section id="clients">
-
-     <div class="row animate-this">
-
-       <!--
-       <div class="col-twelve">
-
-         <div class="client-lists owl-carousel">
-             <div><img src="images/clients/mozilla.png" alt=""></div>
-             <div><img src="images/clients/bower.png" alt=""></div>
-             <div><img src="images/clients/codepen.png" alt=""></div>
-             <div><img src="images/clients/envato.png" alt=""></div>
-             <div><img src="images/clients/firefox.png" alt=""></div>
-             <div><img src="images/clients/grunt.png" alt=""></div>
-             <div><img src="images/clients/evernote.png" alt=""></div>
-             <div><img src="images/clients/github.png" alt=""></div>
-             <div><img src="images/clients/joomla.png" alt=""></div>
-             <div><img src="images/clients/jQuery.png" alt=""></div>
-             <div><img src="images/clients/wordpress.png" alt=""></div>
-         </div>
-
-       </div>--> <!-- end col-twelve -->
-     </div> <!-- end row -->
-
-    </section> <!-- end clients -->
-
-
 
     <!-- testimonials
     ================================================== -->
     <section id="testimonials" class="s-testimonials">
+        <div>
+          <h1 style="text-align: center; font-family: fieldwork-bold;">Our Clients</h1>
+        </div>
+        <div class="row block-large-1-4">
+            <div class="column">
+              <img src="images/BD-Logomark.png"
+                   srcset="images/BD-Logomark.png 1x, images/BD-Logomark.png 2x" alt="" style="padding-bottom: 50px">
+                   <img src="images/BD-Logomark.png"
+                        srcset="images/BD-Logomark.png 1x, images/BD-Logomark.png 2x" alt="">
+            </div>
+            <div class="column">
+              <img src="images/BD-Logomark.png"
+                   srcset="images/BD-Logomark.png 1x, images/BD-Logomark.png 2x" alt="" style="padding-bottom: 50px">
+                   <img src="images/BD-Logomark.png"
+                        srcset="images/BD-Logomark.png 1x, images/BD-Logomark.png 2x" alt="">
+            </div>
+            <div class="column">
+              <img src="images/BD-Logomark.png"
+                   srcset="images/BD-Logomark.png 1x, images/BD-Logomark.png 2x" alt=""style="padding-bottom: 50px">
+                   <img src="images/BD-Logomark.png"
+                        srcset="images/BD-Logomark.png 1x, images/BD-Logomark.png 2x" alt=""style="padding-bottom: 50px">
+            </div>
+            <div class="column">
+              <img src="images/BD-Logomark.png"
+                   srcset="images/BD-Logomark.png 1x, images/BD-Logomark.png 2x" alt=""style="padding-bottom: 50px">
+                   <img src="images/BD-Logomark.png"
+                        srcset="images/BD-Logomark.png 1x, images/BD-Logomark.png 2x" alt="">
+            </div>
 
-        <div class="row collapse">
 
-            <div class="column large-full">
 
-                <div class="testimonial-slider" data-aos="fade-up">
 
-                    <div class="testimonial-slider__slide">
-                      <img src="images/BD-Logomark.png"
-                           srcset="images/BD-Logomark.png 1x, images/BD-Logomark.png 2x" alt="">
-                    </div> <!-- end testimonials__slide -->
 
-                    <div class="testimonial-slider__slide">
-                      <img src="images/BD-Logomark.png"
-                           srcset="images/BD-Logomark.png 1x, images/BD-Logomark.png 2x" alt="">
-                    </div> <!-- end testimonials__slide -->
+        </div>
 
-                    <div class="testimonial-slider__slide">
-                      <img src="images/BD-Logomark.png"
-                           srcset="images/BD-Logomark.png 1x, images/BD-Logomark.png 2x" alt="">
-                    </div> <!-- end testimonials__slide -->
 
-                    <div class="testimonial-slider__slide">
-                      <img src="images/BD-Logomark.png"
-                           srcset="images/BD-Logomark.png 1x, images/BD-Logomark.png 2x" alt="">
-                    </div> <!-- end testimonials__slide -->
-
-                </div> <!-- end testimonial slider -->
-
-            </div> <!-- end column -->
-
-        </div> <!-- end row -->
 
 
 

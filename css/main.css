@@ -51,7 +51,7 @@
 
 
 
-
+@import url("css/fonts.css");
 /* ===================================================================
  * # custom block grid STACK breakpoints
  *
@@ -75,6 +75,7 @@
   }
 
 }
+
 
 
 
@@ -138,7 +139,7 @@ a:active {
  *
  * ------------------------------------------------------------------- */
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: "Gothic A1", sans-serif;
+  font-family: "firasans-semibold", sans-serif;
   font-weight: 700;
   font-style: normal;
   color: #000000;
@@ -216,9 +217,9 @@ p img {
 }
 
 p.lead {
-  font-family: "Gothic A1", sans-serif;
+  font-family: "firasans-light", sans-serif;
   font-weight: 300;
-  font-size: 2.4rem;
+  font-size: 2rem;
   line-height: 1.833;
   margin-bottom: 3.6rem;
   color: #000000;
@@ -1482,11 +1483,25 @@ input::-moz-focus-inner {
   margin-bottom: 6rem;
   color: #f9861a;
 }
-
 .display-1 {
   font-size: 4.8rem;
   line-height: 1.333;
 }
+
+.display-1.team {
+text-align: center;
+margin-top: 0;
+padding-top: 0;
+}
+.display-2 {
+  font-size: 9.6rem;
+  line-height: 1.333;
+  text-align: center;
+  color: white;
+  font-family: fieldwork-bold;
+}
+
+
 
 .section-intro {
   position: relative;
@@ -1573,7 +1588,9 @@ input::-moz-focus-inner {
   .display-1 {
     font-size: 4.2rem;
   }
-
+  .display-2 {
+    font-size: 7.4rem;
+  }
   .section-intro::before {
     font-size: 22rem;
   }
@@ -1588,6 +1605,9 @@ input::-moz-focus-inner {
 @media screen and (max-width:500px) {
   .display-1 {
     font-size: 4rem;
+  }
+  .display-2 {
+    font-size: 7rem;
   }
 
 }
@@ -1606,6 +1626,9 @@ input::-moz-focus-inner {
 @media screen and (max-width:360px) {
   .display-1 {
     font-size: 3.6rem;
+  }
+  .display-2 {
+    font-size: 6.2rem;
   }
 
   .section-intro::before {
@@ -1881,6 +1904,7 @@ input::-moz-focus-inner {
   .s-header {
     top: 2rem;
     height: 8rem;
+
   }
 
   .header-logo img {
@@ -2051,6 +2075,7 @@ input::-moz-focus-inner {
   margin-top: 0;
   color: #ffffff;
   position: relative;
+   font-family: fieldwork-bold;
 }
 
 .hero-content h1::before {
@@ -2365,6 +2390,7 @@ html.no-csstransitions .hero-content {
 }
 
 @media screen and (max-width:1000px) {
+
   .hero-content h1 {
     font-size: 5.6rem;
   }
@@ -2376,6 +2402,15 @@ html.no-csstransitions .hero-content {
 }
 
 @media screen and (max-width:800px) {
+
+  .front-page{
+    height: 400px;
+    min-height: 0;
+  }
+  .hero-content {
+    display: none;
+  }
+
   .hero-content h1 {
     font-size: 4.8rem;
   }
@@ -2403,9 +2438,7 @@ html.no-csstransitions .hero-content {
 }
 
 @media screen and (max-width:600px) {
-  .hero-content h1 {
-    font-size: 4.6rem;
-  }
+
 
   .hero-content h1 br {
     display: none;
@@ -2475,7 +2508,7 @@ html.no-csstransitions .hero-content {
 .s-about__section--profile::before {
   content: "";
   display: block;
-  background-color: #b3c2c1;
+  background-color: #b4b8bf;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -2512,7 +2545,7 @@ html.no-csstransitions .hero-content {
 .position {
   padding-top: 3.6rem;
   padding-bottom: 3.2rem;
-  border-top: 1px solid #b3c2c1;
+  border-top: 1px solid #b4b8bf;
 }
 
 .position .positionimg {
@@ -2848,7 +2881,7 @@ html.no-csstransitions .hero-content {
 .s-portfolio::before {
   content: "";
   display: block;
-  background-color: #b3c2c1;
+  background-color: #b4b8bf;
   position: absolute;
   top: 0;
   right: 0;
@@ -3085,8 +3118,8 @@ html.no-csstransitions .hero-content {
  *
  * ------------------------------------------------------------------- */
 .s-testimonials {
-  padding-top: 14.4rem;
-  padding-bottom: 16rem;
+  padding-top: 6rem;
+  padding-bottom: 4rem;
   background-color: #FFFFFF; /*#0b0a15*/
 }
 
