@@ -3079,7 +3079,7 @@ html.no-csstransitions .hero-content {
 
 @media screen and (max-width:800px) {
   .s-portfolio {
-    padding-top: 20rem;
+    padding-top: 8rem;
   }
 
   .folio-item__thumb a::after {
