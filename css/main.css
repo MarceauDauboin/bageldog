@@ -139,7 +139,7 @@ a:active {
  *
  * ------------------------------------------------------------------- */
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: "firasans-semibold", sans-serif;
+  font-family: "fieldwork-bold", sans-serif;
   font-weight: 700;
   font-style: normal;
   color: #000000;
@@ -2872,12 +2872,12 @@ html.no-csstransitions .hero-content {
  *
  * ------------------------------------------------------------------- */
 .s-portfolio {
-  padding-top: 24rem;
+  padding-top: 10rem;
   padding-bottom: 0;
   background-color: #ffffff;
   position: relative;
 }
-
+/* This is the block on the right
 .s-portfolio::before {
   content: "";
   display: block;
@@ -2888,7 +2888,7 @@ html.no-csstransitions .hero-content {
   bottom: 0;
   left: 50%;
 }
-
+*/
 /* -------------------------------------------------------------------
  * ## portfolio list
  * ------------------------------------------------------------------- */
