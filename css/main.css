@@ -163,6 +163,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 h5, .h5, h6, .h6 {
   margin-top: 4.8rem;
   margin-bottom: 1.2rem;
+  font-family: "firasans-light";
 }
 
 @media screen and (max-width:600px) {
@@ -198,6 +199,7 @@ h3, .h3 {
 h4, .h4 {
   font-size: 2.1rem;
   line-height: 1.333;
+  font-family: "firasans-semibold";
 }
 
 h5, .h5 {
@@ -950,9 +952,9 @@ input[type="submit"],
 input[type="reset"],
 input[type="button"] {
   display: inline-block;
-  font-family: "firasans-semibold", sans-serif;
+  font-family: "firasans-light", sans-serif;
   font-weight: 600;
-  font-size: 1.3rem;
+  font-size: 1.9rem;
   text-transform: uppercase;
   letter-spacing: .6rem;
   height: 6rem;
@@ -995,9 +997,9 @@ button.btn--primary,
 input[type="submit"].btn--primary,
 input[type="reset"].btn--primary,
 input[type="button"].btn--primary {
-  background: #0b0a15;
-  border-color: #ffffff;
-  color: #ffffff;
+  background: #111319; /*0b0a15*/
+  border-color: #b4b8bf;
+  color: #b4b8bf;
 }
 
 .btn.btn--primary:hover,
@@ -1018,9 +1020,9 @@ input[type="button"].btn--primary:focus {
  * ------------------------------------------------- */
 .btn.h-full-width,
 button.h-full-width {
-  width: 100%;
+  width: 60%;
   margin-right: 0;
-  margin-top:100px
+  margin-top:60px
 }
 
 .btn--small,
@@ -1483,10 +1485,14 @@ input::-moz-focus-inner {
   margin-top: 0;
   margin-bottom: 6rem;
   color: #c2e76b;
+  font-family: firasans-light
 }
 .display-1 {
   font-size: 4.8rem;
   line-height: 1.333;
+}
+.display-1.footer {
+  font-family: firasans-semibold;
 }
 
 .display-1.team {
@@ -1666,7 +1672,7 @@ padding-top: 0;
 }
 
 .s-header.sticky {
-  background-color: #050505;
+  background-color: #111319;
   opacity: 0;
   visibility: hidden;
   position: fixed;
@@ -1711,7 +1717,7 @@ padding-top: 0;
   -webkit-transform: translate3d(0, -50%, 0);
   transform: translate3d(0, -50%, 0);
   position: absolute;
-  left: 6rem;
+  left: 16rem;
   top: 50%;
 }
 
@@ -1732,15 +1738,16 @@ padding-top: 0;
  * ## main navigation
  * ------------------------------------------------------------------- */
 .header-nav-wrap {
-  max-width: 1600px;
+  max-width: 1400px;
   padding-left: 10px;
 }
 
 .header-nav {
   list-style: none;
-  font-family: "Gothic A1", sans-serif;
-  font-weight: 700;
-  font-size: 1.4rem;
+  font-family: "firasans-light";
+  font-weight: 100;
+  letter-spacing: 10pt;
+  font-size: 1.8rem;
   line-height: 6rem;
   padding-top: 1.4rem;
   padding-bottom: 1.4rem;
@@ -1854,8 +1861,8 @@ padding-top: 0;
  * ## download resume button
  * ------------------------------------------------------------------- */
 .header-content .btn {
-  border-color: #ffffff;
-  color: #ffffff;
+  border-color: #b4b8bf;
+  color: #b4b8bf;
   margin: 0;
   padding: 0 4rem;
   font-size: 1.1rem;
@@ -1863,7 +1870,7 @@ padding-top: 0;
   transform: translate3d(0, -50%, 0);
   position: absolute;
   top: 50%;
-  right: 8rem;
+  right: 15.7rem;
 }
 
 .header-content .btn:hover,
@@ -1882,7 +1889,7 @@ padding-top: 0;
    .header-nav-wrap {
      max-width: none;
      width: 100%;
-     padding-left: 15rem;
+     padding-left: 26rem;
    }
 
 
@@ -1890,13 +1897,13 @@ padding-top: 0;
  }
 @media screen and (max-width:1700px) {
   .header-logo {
-    left: 6rem;
+    left: 10rem;
   }
 
   .header-nav-wrap {
     max-width: none;
     width: 100%;
-    padding-left: 13.2rem;
+    padding-left: 22rem;
   }
 
   .header-content .btn {
@@ -1905,10 +1912,23 @@ padding-top: 0;
 
 }
 
+@media screen and (max-width:1200px) {
+  .header-logo {
+    left: 6rem;
+  }
+
+
+}
+
 @media screen and (max-width:1000px) {
   .header-content .btn {
     height: 4.8rem !important;
     line-height: 4.4rem !important;
+  }
+  .header-nav-wrap {
+    max-width: none;
+    width: 100%;
+    padding-left: 13rem;
   }
 
 }
@@ -1919,6 +1939,7 @@ padding-top: 0;
     height: 8rem;
 
   }
+
 
   .header-logo img {
     width: 50px;
@@ -2966,7 +2987,7 @@ html.no-csstransitions .hero-content {
 
 .folio-item__thumb a::after {
   z-index: 1;
-  content: "+";
+  content: "";
   font-family: "Gothic A1", sans-serif;
   font-weight: 300;
   font-size: 3rem;
@@ -3019,7 +3040,7 @@ html.no-csstransitions .hero-content {
 
 .folio-item__cat {
   color: rgba(255, 255, 255, 0.5);
-  font-family: "Gothic A1", sans-serif;
+  font-family: "firasans-light";
   font-size: 1.4rem;
   margin-bottom: 0;
 }
@@ -3354,7 +3375,7 @@ html.no-csstransitions .hero-content {
 .s-footer {
   padding-top: 24rem;
   padding-bottom: 8rem;
-  background-color: #0b0a15;
+  background-color: #111319; /*0b0a15*/
   position: relative;
 }
 /*
@@ -3415,7 +3436,7 @@ html.no-csstransitions .hero-content {
 }
 
 .footer-contact-block__header {
-  color: rgba(255, 255, 255, 0.4);
+  color: #b4b8bf;
   margin: 0;
 }
 
