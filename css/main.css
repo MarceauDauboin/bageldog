@@ -224,7 +224,7 @@ p.lead {
   font-size: 2rem;
   line-height: 1.833;
   margin-bottom: 3.6rem;
-  color: #000000;
+  color: #111319;
 }
 
 @media screen and (max-width:1200px) {
@@ -1499,11 +1499,21 @@ input::-moz-focus-inner {
 .display-1 {
   font-size: 4.8rem;
   line-height: 1.333;
-
+  colour: #111319;
 }
 .display-1.footer {
   font-family: "firasans-semibold";
 
+}
+
+.display-1.portfolio-item {
+  font-family: "firasans-semibold";
+
+}
+
+.credits p.lead, h4  {
+  margin-top: 0;
+  color: #B4B8BF;
 }
 
 .display-1.team {
@@ -1668,6 +1678,10 @@ padding-top: 0;
   position: absolute;
   top: 4rem;
   left: 0;
+}
+
+.s-header.portfolio_item {
+
 }
 
 .s-header.offset {
@@ -2093,12 +2107,7 @@ padding-top: 0;
   margin-bottom: 0;
 }
 .s-hero.portfolio-top {
-  width: 100%;
-  height: 100vh;
-
-  overflow: hidden;
-  background-color: transparent;
-  position: relative;
+  background-color: white;
 }
 
 .front.s-hero::before {
@@ -2128,6 +2137,19 @@ padding-top: 0;
   align-items: flex-end;
   padding-top: 20vh;
   padding-bottom: 14vh;
+  position: relative;
+}
+
+.portfolio-video-content {
+  height: 100%;
+  max-width: 1600px;
+  -ms-flex-align: end;
+  -webkit-box-align: end;
+  align-items: flex-end;
+  padding-top: 20vh;
+  padding-bottom: 0vh;
+  padding-left: 5px;
+  padding-right: 5px;
   position: relative;
 }
 
@@ -2210,6 +2232,12 @@ padding-top: 0;
   position: absolute;
   right: 49%;
   bottom: 10rem;
+}
+
+.hero-scroll.portfolio-item {
+  position: absolute;
+  right: 49%;
+  bottom: 40rem;
 }
 
 /*
@@ -2933,6 +2961,14 @@ html.no-csstransitions .hero-content {
 
 }
 
+/* -------------------------------------------------------------------
+ * ## next project
+ * ------------------------------------------------------------------- */
+  .s-next-project{
+    background-color: white;
+    padding-top: 100px;
+
+  }
 
 
 /* ===================================================================
@@ -2946,6 +2982,8 @@ html.no-csstransitions .hero-content {
   position: relative;
   padding-bottom: 20rem;
 }
+
+
 /* This is the block on the right
 .s-portfolio::before {
   content: "";
@@ -3042,12 +3080,28 @@ html.no-csstransitions .hero-content {
   top: 3.6rem;
 }
 
+.next-project-text {
+  z-index: 2;
+  padding: 0 3rem;
+  opacity: 100;
+  visibility: visible;
+  position: absolute;
+  left: 0;
+  top: 3.6rem;
+}
+
 .folio-item__title {
   color: #ffffff;
   font-weight: 400;
   font-size: 2.1rem;
   line-height: 1.333;
-  margin: 0;
+
+  display:inline;
+}
+
+.folio-item__title.larger-text {
+  font-size: 2.6rem;
+  margin-left: 50px;
 }
 
 .folio-item__cat {
@@ -3055,6 +3109,11 @@ html.no-csstransitions .hero-content {
   font-family: "firasans-light";
   font-size: 1.4rem;
   margin-bottom: 0;
+}
+
+.folio-item__cat.larger-text{
+  font-size: 2.6rem;
+  color: #e2e2e2;
 }
 
 .folio-item__project-link {
@@ -3145,6 +3204,10 @@ html.no-csstransitions .hero-content {
     font-size: 1.2rem;
   }
 
+  .portfolio-video-content {
+    padding-top: 15vh;
+  }
+
 }
 
 @media screen and (max-width:800px) {
@@ -3164,6 +3227,9 @@ html.no-csstransitions .hero-content {
     font-size: 1.4rem;
   }
 
+  .portfolio-video-content {
+    padding-top: 12vh;
+  }
 }
 
 @media screen and (max-width:600px) {
@@ -3173,6 +3239,7 @@ html.no-csstransitions .hero-content {
 
   .folio-item__title {
     font-size: 1.8rem;
+    display: block;
   }
 
   .folio-item__cat {
