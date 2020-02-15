@@ -459,10 +459,12 @@ textarea {
 }
 
 .column.bagelbitsimages {
-	-ms-flex: 1 1 0%;
-	-webkit-box-flex: 1;
-	flex: 1 1 0%;
 	padding: 2px 7px;
+}
+
+.column.about-profiles {
+	padding: 100px;
+	padding-bottom: 0px;
 }
 
 .collapse > .column,
@@ -777,6 +779,11 @@ textarea {
 		max-width: 100%;
 	}
 
+	.column.about-profiles {
+		padding: 80px;
+		padding-bottom: 0px;
+	}
+
 }
 
 /* -------------------------------------------------------------------
@@ -873,6 +880,11 @@ textarea {
 		display: none;
 	}
 
+	.column.about-profiles {
+		padding: 60px;
+		padding-bottom: 0px;
+	}
+
 }
 
 /* -------------------------------------------------------------------
@@ -894,6 +906,10 @@ textarea {
 
 	.column {
 		padding: 0 10px;
+	}
+	.column.about-profiles {
+		padding: 40px;
+		padding-bottom: 0px;
 	}
 
 	.mob-1 {
@@ -1011,6 +1027,10 @@ textarea {
 		margin-left: 0;
 		margin-right: 0;
 		padding: 0;
+	}
+	.column.about-profiles {
+		padding: 20px;
+		padding-bottom: 0px;
 	}
 
 }

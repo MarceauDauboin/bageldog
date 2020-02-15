@@ -226,6 +226,16 @@ p.lead {
   margin-bottom: 3.6rem;
   color: #111319;
 }
+.s-about p.lead {
+  font-weight: 800;
+
+}
+
+/*
+.team-profile p.lead {
+  margin-bottom: 2rem;
+}
+*/
 
 @media screen and (max-width:1200px) {
   p.lead {
@@ -1501,6 +1511,8 @@ input::-moz-focus-inner {
   line-height: 1.333;
   colour: #111319;
 }
+
+
 .display-1.footer {
   font-family: "firasans-semibold";
 
@@ -1510,6 +1522,18 @@ input::-moz-focus-inner {
   font-family: "firasans-semibold";
 
 }
+
+.display-1.about-us {
+  font-family: "firasans-semibold";
+  font-size: 2.2rem;
+  padding-bottom: 20px;
+}
+.team-profile .display-1  {
+  font-family: "firasans-semibold";
+  font-size: 2.2rem;
+  padding-bottom: 0px;
+}
+
 
 .credits p.lead, h4  {
   margin-top: 0;
@@ -2583,7 +2607,7 @@ html.no-csstransitions .hero-content {
  *
  * ------------------------------------------------------------------- */
 .s-about {
-  padding-bottom: 16rem;
+  padding-bottom: 0rem;
   background-color: #ffffff;
   position: relative;
 }
@@ -2593,12 +2617,11 @@ html.no-csstransitions .hero-content {
 }
 */
 .s-about__section--profile {
-  padding-top: 28rem;
-  padding-bottom: 4rem;
-  min-height: 97.2rem;
+  padding-top: 15rem;
   position: relative;
 }
 
+/*
 .s-about__section--profile::before {
   content: "";
   display: block;
@@ -2609,7 +2632,7 @@ html.no-csstransitions .hero-content {
   right: 0;
   left: calc(50% + 12vw);
 }
-
+*/
 .s-about__section--profile .row {
   position: relative;
 }
@@ -3267,7 +3290,7 @@ html.no-csstransitions .hero-content {
  * ------------------------------------------------------------------- */
 .s-testimonials {
   padding-top: 6rem;
-  padding-bottom: 0rem;
+  padding-bottom: 12rem;
   background-color: #FFFFFF; /*#0b0a15*/
 }
 
