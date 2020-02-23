@@ -226,11 +226,12 @@ p.lead {
   margin-bottom: 3.6rem;
   color: #111319;
 }
+/* font-weight change for about section
 .s-about p.lead {
-  font-weight: 800;
+
 
 }
-
+*/
 /*
 .team-profile p.lead {
   margin-bottom: 2rem;
@@ -475,7 +476,6 @@ dd {
 .video-container {
   position: relative;
   padding-bottom: 56.25%;
-  height: 0;
   overflow: hidden;
 }
 
@@ -489,6 +489,20 @@ dd {
   width: 100%;
   height: 100%;
 }
+
+.s-coming-soon{
+  background-color: #b4b8bf;
+  width: 100%;
+  height: 100%
+}
+.center {
+  padding-top: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 
 /* -------------------------------------------------------------------
  * ## floated image
