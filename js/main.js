@@ -60,6 +60,7 @@
 
    /* move header
     * -------------------------------------------------- */
+
     const ssMoveHeader = function () {
 
         const $hero = $('.s-hero'),
@@ -70,12 +71,12 @@
         $WIN.on('scroll', function () {
 
             let loc = $WIN.scrollTop();
-
+            /*
             if (loc > triggerHeight) {
                 $hdr.addClass('sticky');
             } else {
                 $hdr.removeClass('sticky');
-            }
+            }*/
 
             if (loc > triggerHeight + 20) {
                 $hdr.addClass('offset');
@@ -93,7 +94,8 @@
 
     };
 
-    
+
+
 
 
 
@@ -284,7 +286,7 @@
     * ------------------------------------------------------ */
     const ssBackToTop = function() {
 
-        const pxShow = 800;
+        const pxShow = 200;
         const $goTopButton = $(".ss-go-top")
 
         // Show or hide the button
