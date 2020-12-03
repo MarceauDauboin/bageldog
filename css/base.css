@@ -430,7 +430,7 @@ textarea {
 /* rows
  * ------------------------------------- */
 .row {
-	width: 89%;
+	width: 67%;
 	max-width: 1600px;
 	margin: 0 auto;
 	display: -ms-flexbox;
@@ -463,7 +463,7 @@ textarea {
 }
 
 .column.about-profiles {
-	padding: 100px;
+	padding: 50px;
 	padding-bottom: 0px;
 }
 
